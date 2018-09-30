@@ -8,7 +8,7 @@ const moment = require(`moment`)
 const dclassify = require(`dclassify`)
 
 //inisialisasi token dll
-const token_telegram = '635133884:AAHX4dQCPLa4H3Hm1plyf3JHop_xTtgCVrI'
+const token_telegram = 'TELEGRAM_BOT_TOKEN'
 const Classifier = dclassify.Classifier
 const DataSet = dclassify.DataSet
 const Document = dclassify.Document
@@ -114,7 +114,7 @@ bot.on('message', (msg) => {
   const theResult = classifier.classify(testDoc);
   switch (theResult.category) {
     case 'source_code':
-      bot.sendMessage(chatId, 'source code ada di sini, ' + username + ': https://pastebin.com/raw/j2MS3HMi');
+      bot.sendMessage(chatId, 'source code ada di sini, ' + username + ': https://pastebin.com/raw/j2MS3HMi atau di sini: https://github.com/Chonzzz/telegrambotwithbayes');
       break;
     case 'hai':
       bot.sendMessage(chatId, 'hai juga, ' + username + '!');
