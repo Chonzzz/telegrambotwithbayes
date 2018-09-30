@@ -1,0 +1,18 @@
+{
+  "name": "tele_bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/maps": "^0.5.5",
+    "codeday-clear": "^1.1.4",
+    "dclassify": "^1.1.2",
+    "moment": "^2.22.2",
+    "node-telegram-bot-api": "^0.30.0"
+  }
+}
